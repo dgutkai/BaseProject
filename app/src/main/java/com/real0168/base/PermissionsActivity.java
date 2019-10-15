@@ -140,7 +140,7 @@ public abstract class PermissionsActivity extends AppCompatActivity {
                 builder.setTitle(R.string.alert_permissions_title);
                 builder.setMessage(R.string.alert_permissions_message);
                 builder.setCancelable(false); // the user cannot cancel the dialog with native back button
-                builder.setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.common_ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         // when the user taps "OK" we request the needed permissions

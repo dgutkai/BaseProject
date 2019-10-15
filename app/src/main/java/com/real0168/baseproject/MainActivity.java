@@ -5,6 +5,7 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 
 import com.real0168.base.BaseActivity;
+import com.real0168.utils.DialogUtils;
 
 public class MainActivity extends BaseActivity {
     @Override
@@ -15,6 +16,18 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        DialogUtils.messageDialog(this, "提示", "这是例示Dialog！", new DialogUtils.CommonDialogListener() {
+            @Override
+            public void onOk() {
+
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+        }).show();
     }
 
     @Override
